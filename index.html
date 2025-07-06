@@ -101,7 +101,7 @@
         canvas.height = window.innerHeight;
         const c = canvas.getContext('2d');
 
-        let unispeed = 6;
+        let unispeed = 8;
         let score = 0;
         let s = 0;
         const body = document.querySelector('body');
@@ -125,7 +125,7 @@
 
 
         let soilcont = 500;
-        let jump = -15;
+        let jump = -20;
 
        
         addEventListener('mousedown', function () {
@@ -612,7 +612,7 @@
         let time = 5000;
         function generatetrees() {
             setTimeout(generatetrees, time);
-            let x = canvas.width + 100;
+            let x = canvas.width*3;
             let y = canvas.height - 200;
 
             trees.push(new Tree(x, y, 60));
