@@ -101,7 +101,7 @@
         canvas.height = window.innerHeight;
         const c = canvas.getContext('2d');
 
-        let unispeed = 8;
+        let unispeed = 12;
         let score = 0;
         let s = 0;
         const body = document.querySelector('body');
@@ -125,7 +125,7 @@
 
 
         let soilcont = 500;
-        let jump = -20;
+        let jump = -15;
 
        
         addEventListener('mousedown', function () {
@@ -616,7 +616,7 @@
             let y = canvas.height - 200;
 
             trees.push(new Tree(x, y, 60));
-            time = Math.random() * 2000 + 3000 - 100 * unispeed;
+            time = Math.random() * 2000 + 4000 - 100 * unispeed;
         }
 
         for (let i = 0; i < 50; i++) {
